@@ -1,0 +1,28 @@
+<h1>Take Quiz</h1>
+
+<%= form_for(@quiz) do |f| %>
+  <% if @quiz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quiz.errors.count, "error") %> prohibited this quiz from being saved:</h2>
+
+      <ul>
+      <% @quiz.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= @quiz.the_questions.each do |question| %>
+    <tr>
+        <label> <input type = "checkbox" class = "radio" value = "1"/>question.answer1</label>
+        <label> <input type = "checkbox" class = "radio" value = "2"/>question.answer1</label>
+        <label> <input type = "checkbox" class = "radio" value = "3"/>question.answer1</label>
+        <label> <input type = "checkbox" class = "radio" value = "4"/>question.answer1</label>
+        </br>
+      </tr>
+    <% end %>
+  </div>
+ 
+<% end %>
