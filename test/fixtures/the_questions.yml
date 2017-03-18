@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question: MyString
+  weight: 1
+  answer1: MyString
+  field1: MyString
+  answer2: MyString
+  field2: MyString
+  answer3: MyString
+  field3: MyString
+  answer4: MyString
+  field4: MyString
+
+two:
+  question: MyString
+  weight: 1
+  answer1: MyString
+  field1: MyString
+  answer2: MyString
+  field2: MyString
+  answer3: MyString
+  field3: MyString
+  answer4: MyString
+  field4: MyString
