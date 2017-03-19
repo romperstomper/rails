@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     get 'take', to: 'take_quizzes#take'
   end
   resources :courses
+  resources :the_question
   resources :quizzes do
     resources :the_questions
   end
