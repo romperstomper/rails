@@ -30,7 +30,7 @@ class QuizzesController < ApplicationController
     @the_question = TheQuestion.new(the_question_params)
     respond_to do |format|
       if @question.save
-        format.html { redirect_to @add_question, notice: 'Question added!' }
+        format.html { redirect_to @quiz, notice: 'Question added!' }
         format.json { render :add, status: :created, location: @quiz }
       else
         format.html { render :add }
